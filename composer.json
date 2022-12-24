@@ -1,0 +1,8 @@
+{
+    "autoload": {
+        "psr-4": {
+            "VideoLink\\": "lib/VideoLink",
+            "Parser\\": "lib/Parser"
+        }
+    }
+}
