@@ -1,7 +1,6 @@
 <?
 namespace Parser;
 
-use Bitrix\Main\Controller\Export;
 use VideoLink\VideoLink;
 
 abstract class Parser {
