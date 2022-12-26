@@ -1,12 +1,12 @@
 <?
 namespace Parser;
 
-class YoutubeParser extends Parser {
+class YoutubeParser extends Parser
+{
 
-    public function __construct(string $url)
+    public function getHosting()
     {
-        parent::__construct($url);
-        $this->hosting = 'youtube';
+        return 'youtube';
     }
 
     public static function getSupportLinkClasses(): array

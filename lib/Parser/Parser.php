@@ -6,7 +6,6 @@ use VideoLink\VideoLink;
 
 abstract class Parser {
 
-    protected $hosting = 'undefined';
     protected VideoLink $videoLink;
 
     public function __construct(string $url)
@@ -25,18 +24,15 @@ abstract class Parser {
 
     }
 
-    public function getHosting()
-    {
-        return $this->hosting;
-    }
-
     public function getVideoId()
     {
         return $this->videoLink->getVideoId();
     }
 
+    abstract public function getHosting();
+
     abstract static public function getSupportLinkClasses() : array;
 
-    public abstract function getIframe();
+    abstract public function getIframe();
 
 }

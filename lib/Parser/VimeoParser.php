@@ -3,10 +3,9 @@ namespace Parser;
 
 class VimeoParser extends Parser {
 
-    public function __construct(string $url)
+    public function getHosting()
     {
-        parent::__construct($url);
-        $this->hosting = 'vimeo';
+        return 'vimeo';
     }
 
     public static function getSupportLinkClasses(): array
